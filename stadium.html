@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_53cb9a69d97241c6a77d51562fc763ed {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_53cb9a69d97241c6a77d51562fc763ed" ></div>
+        
+</body>
+<script>    
+    
+            var map_53cb9a69d97241c6a77d51562fc763ed = L.map(
+                "map_53cb9a69d97241c6a77d51562fc763ed",
+                {
+                    center: [40.7128, -74.006],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5234bfc2f6d947a6aad1ac1cd1f874ed = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            var marker_52ca749bbba14a449f0854297db35875 = L.marker(
+                [33.800277777800005, -117.88277777799999],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_52ca749bbba14a449f0854297db35875.bindTooltip(
+                `<div>
+                     Angel Stadium of Anaheim, Los Angeles Angels of Anaheim
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ecc1f1a828dd4d89bb0ae35dc24d1950 = L.marker(
+                [37.7786111111, -122.38916666700001],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_ecc1f1a828dd4d89bb0ae35dc24d1950.bindTooltip(
+                `<div>
+                     AT&T Park, San Francisco Giants
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd753268790c4774b614c4209e770704 = L.marker(
+                [38.6225, -90.1930555556],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_dd753268790c4774b614c4209e770704.bindTooltip(
+                `<div>
+                     Busch Stadium, St. Louis Cardinals
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_487ae61164c140febb709ff76b1af3d7 = L.marker(
+                [33.4452777778, -112.066944444],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_487ae61164c140febb709ff76b1af3d7.bindTooltip(
+                `<div>
+                     Chase Field, Arizona Diamondbacks
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19052494edf64b9aab310e5415fddacf = L.marker(
+                [40.7569444444, -73.84583333329999],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_19052494edf64b9aab310e5415fddacf.bindTooltip(
+                `<div>
+                     Citi Field, New York Mets
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5fea51dfb0ba4963a42d30c09e735c7d = L.marker(
+                [39.9058333333, -75.1663888889],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_5fea51dfb0ba4963a42d30c09e735c7d.bindTooltip(
+                `<div>
+                     Citizens Bank Park, Philadelphia Phillies
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c41b22087f394ef19d0877266d82d0fc = L.marker(
+                [42.3391666667, -83.0486111111],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_c41b22087f394ef19d0877266d82d0fc.bindTooltip(
+                `<div>
+                     Comerica Park, Detroit Tigers
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd6f9782d04a48cf90e02f040c1162cd = L.marker(
+                [39.756111111100005, -104.994166667],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_fd6f9782d04a48cf90e02f040c1162cd.bindTooltip(
+                `<div>
+                     Coors Field, Colorado Rockies
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad3254557f1b431a90a0c2f2cd127e68 = L.marker(
+                [34.0736111111, -118.24],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_ad3254557f1b431a90a0c2f2cd127e68.bindTooltip(
+                `<div>
+                     Dodger Stadium, Los Angeles Dodgers
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df49d08e04494fb4883c1bbdd29fa724 = L.marker(
+                [42.34625, -71.09775],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_df49d08e04494fb4883c1bbdd29fa724.bindTooltip(
+                `<div>
+                     Fenway Park, Boston Red Sox
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_27a23c1d3f5340d0b3ef1b2fad185cdb = L.marker(
+                [32.751388888899996, -97.0827777778],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_27a23c1d3f5340d0b3ef1b2fad185cdb.bindTooltip(
+                `<div>
+                     Globe Life Park in Arlington, Texas Rangers
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51762f7e1ef8424599a1f85cb8f4f38f = L.marker(
+                [39.0975, -84.5066666667],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_51762f7e1ef8424599a1f85cb8f4f38f.bindTooltip(
+                `<div>
+                     Great American Ball Park, Cincinnati Reds
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b7d41a05360400b90998e21a62d8776 = L.marker(
+                [41.83, -87.63388888889999],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_6b7d41a05360400b90998e21a62d8776.bindTooltip(
+                `<div>
+                     Guaranteed Rate Field, Chicago White Sox
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f627cd17c0fb43d5b8be20206b254310 = L.marker(
+                [39.0513888889, -94.48055555559999],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_f627cd17c0fb43d5b8be20206b254310.bindTooltip(
+                `<div>
+                     Kauffman Stadium, Kansas City Royals
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_57f3359d283d4d3481b4cb431e7eeb04 = L.marker(
+                [25.778055555599998, -80.2197222222],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_57f3359d283d4d3481b4cb431e7eeb04.bindTooltip(
+                `<div>
+                     Marlins Park, Miami Marlins
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24717ff62ed54ac0a9bd39a14ff7fee2 = L.marker(
+                [43.0283333333, -87.9711111111],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_24717ff62ed54ac0a9bd39a14ff7fee2.bindTooltip(
+                `<div>
+                     Miller Park, Milwaukee Brewers
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22a1771c0e3849e0859f58da90998d2c = L.marker(
+                [29.756944444400002, -95.35555555559999],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_22a1771c0e3849e0859f58da90998d2c.bindTooltip(
+                `<div>
+                     Minute Maid Park, Houston Astros
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_17317d6214844da586684eef0d54280d = L.marker(
+                [38.8727777778, -77.0075],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_17317d6214844da586684eef0d54280d.bindTooltip(
+                `<div>
+                     Nationals Park, Washington Nationals
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e04be131cb33403694747a1f31c1a653 = L.marker(
+                [37.751666666700004, -122.200555556],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_e04be131cb33403694747a1f31c1a653.bindTooltip(
+                `<div>
+                     Oakland–Alameda County Coliseum, Oakland Athletics
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd50b86c9af6449aa63b45b89c53ab95 = L.marker(
+                [39.2838888889, -76.6216666667],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_bd50b86c9af6449aa63b45b89c53ab95.bindTooltip(
+                `<div>
+                     Oriole Park at Camden Yards, Baltimore Orioles
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14588ade92fb40d4b332ee4da1ffe6ed = L.marker(
+                [32.707222222199995, -117.15666666700001],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_14588ade92fb40d4b332ee4da1ffe6ed.bindTooltip(
+                `<div>
+                     Petco Park, San Diego Padres
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09ab55ad722f44e193db5b4252d129aa = L.marker(
+                [40.4469444444, -80.0058333333],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_09ab55ad722f44e193db5b4252d129aa.bindTooltip(
+                `<div>
+                     PNC Park, Pittsburgh Pirates
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f9f86c402b434e3da31021b884b5ac59 = L.marker(
+                [41.4958333333, -81.6852777778],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_f9f86c402b434e3da31021b884b5ac59.bindTooltip(
+                `<div>
+                     Progressive Field, Cleveland Indians
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4443a10661e4e5e8dee56955a996a06 = L.marker(
+                [43.6413888889, -79.3891666667],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_f4443a10661e4e5e8dee56955a996a06.bindTooltip(
+                `<div>
+                     Rogers Centre, Toronto Blue Jays
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff8846d26cea45f68d10ca265e6ac114 = L.marker(
+                [47.5911111111, -122.333055556],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_ff8846d26cea45f68d10ca265e6ac114.bindTooltip(
+                `<div>
+                     Safeco Field, Seattle Mariners
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_71157c0dc4bc4fff8660db8fca49100b = L.marker(
+                [33.89, -84.4680555556],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_71157c0dc4bc4fff8660db8fca49100b.bindTooltip(
+                `<div>
+                     SunTrust Park, Atlanta Braves
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ed97250c3a948e9971ec6820d54895c = L.marker(
+                [44.9816666667, -93.2783333333],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_9ed97250c3a948e9971ec6820d54895c.bindTooltip(
+                `<div>
+                     Target Field, Minnesota Twins
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b24bfb0711a486bb939fad53e3fd793 = L.marker(
+                [27.7683333333, -82.6533333333],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_1b24bfb0711a486bb939fad53e3fd793.bindTooltip(
+                `<div>
+                     Tropicana Field, Tampa Bay Rays
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_17328b0d26174d7ab59e45df373313c0 = L.marker(
+                [41.9480555556, -87.6561111111],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_17328b0d26174d7ab59e45df373313c0.bindTooltip(
+                `<div>
+                     Wrigley Field, Chicago Cubs
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_846246fb2fcc419192d02582bbb0fa32 = L.marker(
+                [40.8291666667, -73.92638888890001],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_846246fb2fcc419192d02582bbb0fa32.bindTooltip(
+                `<div>
+                     Yankee Stadium, New York Yankees
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7d2d8f9b703455d91f3816387678d40 = L.marker(
+                [33.800277777800005, -117.88277777799999],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_d7d2d8f9b703455d91f3816387678d40.bindTooltip(
+                `<div>
+                     Angel Stadium of Anaheim, Los Angeles Angels of Anaheim
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_86876e412ba6418e872ba0320ff5c369 = L.marker(
+                [37.7786111111, -122.38916666700001],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_86876e412ba6418e872ba0320ff5c369.bindTooltip(
+                `<div>
+                     AT&T Park, San Francisco Giants
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f34b74636187461f877db6ee5b07e800 = L.marker(
+                [38.6225, -90.1930555556],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_f34b74636187461f877db6ee5b07e800.bindTooltip(
+                `<div>
+                     Busch Stadium, St. Louis Cardinals
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b804260d64ba4a51a6ab4df5475da7d3 = L.marker(
+                [33.4452777778, -112.066944444],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_b804260d64ba4a51a6ab4df5475da7d3.bindTooltip(
+                `<div>
+                     Chase Field, Arizona Diamondbacks
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_427ae2cd3eec4cb99eb34f7568cb6fbe = L.marker(
+                [40.7569444444, -73.84583333329999],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_427ae2cd3eec4cb99eb34f7568cb6fbe.bindTooltip(
+                `<div>
+                     Citi Field, New York Mets
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_83cb3437fbba40eb83c65d6005d9ddb6 = L.marker(
+                [39.9058333333, -75.1663888889],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_83cb3437fbba40eb83c65d6005d9ddb6.bindTooltip(
+                `<div>
+                     Citizens Bank Park, Philadelphia Phillies
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0912de238904379830707b1c318e1bc = L.marker(
+                [42.3391666667, -83.0486111111],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_b0912de238904379830707b1c318e1bc.bindTooltip(
+                `<div>
+                     Comerica Park, Detroit Tigers
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_07333f388cee4812958a30d53522c5d2 = L.marker(
+                [39.756111111100005, -104.994166667],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_07333f388cee4812958a30d53522c5d2.bindTooltip(
+                `<div>
+                     Coors Field, Colorado Rockies
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49f29eb252e34a9b9da6f38e78902f46 = L.marker(
+                [34.0736111111, -118.24],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_49f29eb252e34a9b9da6f38e78902f46.bindTooltip(
+                `<div>
+                     Dodger Stadium, Los Angeles Dodgers
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a7497ab97ac4c5380daeac9cf573c90 = L.marker(
+                [42.34625, -71.09775],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_2a7497ab97ac4c5380daeac9cf573c90.bindTooltip(
+                `<div>
+                     Fenway Park, Boston Red Sox
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19ef3e67f4314a6a8df1d2ca4f89ecf5 = L.marker(
+                [32.751388888899996, -97.0827777778],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_19ef3e67f4314a6a8df1d2ca4f89ecf5.bindTooltip(
+                `<div>
+                     Globe Life Park in Arlington, Texas Rangers
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_999d213c3d6646d3864db4f74cff2ff5 = L.marker(
+                [39.0975, -84.5066666667],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_999d213c3d6646d3864db4f74cff2ff5.bindTooltip(
+                `<div>
+                     Great American Ball Park, Cincinnati Reds
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_294a1a5bd7a640bdb9cf4911086d0553 = L.marker(
+                [41.83, -87.63388888889999],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_294a1a5bd7a640bdb9cf4911086d0553.bindTooltip(
+                `<div>
+                     Guaranteed Rate Field, Chicago White Sox
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc8cf16df5c44d52871cafc27584b2cd = L.marker(
+                [39.0513888889, -94.48055555559999],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_fc8cf16df5c44d52871cafc27584b2cd.bindTooltip(
+                `<div>
+                     Kauffman Stadium, Kansas City Royals
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_120062888bb446c59593109cd54ee1ac = L.marker(
+                [25.778055555599998, -80.2197222222],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_120062888bb446c59593109cd54ee1ac.bindTooltip(
+                `<div>
+                     Marlins Park, Miami Marlins
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e94afa30b73948108f776604c4c7803b = L.marker(
+                [43.0283333333, -87.9711111111],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_e94afa30b73948108f776604c4c7803b.bindTooltip(
+                `<div>
+                     Miller Park, Milwaukee Brewers
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_83b06c71c7b24e93922201f95122f3ce = L.marker(
+                [29.756944444400002, -95.35555555559999],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_83b06c71c7b24e93922201f95122f3ce.bindTooltip(
+                `<div>
+                     Minute Maid Park, Houston Astros
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f10b835be99147989027585db5e883b0 = L.marker(
+                [38.8727777778, -77.0075],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_f10b835be99147989027585db5e883b0.bindTooltip(
+                `<div>
+                     Nationals Park, Washington Nationals
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_97a93f1e878b48c28a26fe87409f5e94 = L.marker(
+                [37.751666666700004, -122.200555556],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_97a93f1e878b48c28a26fe87409f5e94.bindTooltip(
+                `<div>
+                     Oakland–Alameda County Coliseum, Oakland Athletics
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e06715ef43ee44899b61018cc4465ff5 = L.marker(
+                [39.2838888889, -76.6216666667],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_e06715ef43ee44899b61018cc4465ff5.bindTooltip(
+                `<div>
+                     Oriole Park at Camden Yards, Baltimore Orioles
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_405ed07cfbda47f5affd0df24a3f4e60 = L.marker(
+                [32.707222222199995, -117.15666666700001],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_405ed07cfbda47f5affd0df24a3f4e60.bindTooltip(
+                `<div>
+                     Petco Park, San Diego Padres
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2dcf16a2231243aeb8227812815abbdb = L.marker(
+                [40.4469444444, -80.0058333333],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_2dcf16a2231243aeb8227812815abbdb.bindTooltip(
+                `<div>
+                     PNC Park, Pittsburgh Pirates
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_599fbace6aae47c68cca124b3aa2aaa5 = L.marker(
+                [41.4958333333, -81.6852777778],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_599fbace6aae47c68cca124b3aa2aaa5.bindTooltip(
+                `<div>
+                     Progressive Field, Cleveland Indians
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_355d232889ba46a8824e685d664ac10e = L.marker(
+                [43.6413888889, -79.3891666667],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_355d232889ba46a8824e685d664ac10e.bindTooltip(
+                `<div>
+                     Rogers Centre, Toronto Blue Jays
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b4a56caa26f404c81c4b6fa43e0610d = L.marker(
+                [47.5911111111, -122.333055556],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_6b4a56caa26f404c81c4b6fa43e0610d.bindTooltip(
+                `<div>
+                     Safeco Field, Seattle Mariners
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1b519cc6ce945e69758257e458245d4 = L.marker(
+                [33.89, -84.4680555556],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_b1b519cc6ce945e69758257e458245d4.bindTooltip(
+                `<div>
+                     SunTrust Park, Atlanta Braves
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_baff0b1a758844cca59229bf40897067 = L.marker(
+                [44.9816666667, -93.2783333333],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_baff0b1a758844cca59229bf40897067.bindTooltip(
+                `<div>
+                     Target Field, Minnesota Twins
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ad6163c471d4c709f795dfdca120678 = L.marker(
+                [27.7683333333, -82.6533333333],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_2ad6163c471d4c709f795dfdca120678.bindTooltip(
+                `<div>
+                     Tropicana Field, Tampa Bay Rays
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f1cd7c4e31f4894843716a2a33dbc5a = L.marker(
+                [41.9480555556, -87.6561111111],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_8f1cd7c4e31f4894843716a2a33dbc5a.bindTooltip(
+                `<div>
+                     Wrigley Field, Chicago Cubs
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39da102c906e4c54b0a6085e255d76b8 = L.marker(
+                [40.8291666667, -73.92638888890001],
+                {}
+            ).addTo(map_53cb9a69d97241c6a77d51562fc763ed);
+        
+    
+            marker_39da102c906e4c54b0a6085e255d76b8.bindTooltip(
+                `<div>
+                     Yankee Stadium, New York Yankees
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
